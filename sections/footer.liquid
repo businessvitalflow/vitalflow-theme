@@ -1,0 +1,193 @@
+<style>
+  .vf-footer {
+    background: #1E3A8A;
+    color: white;
+    padding: 60px 40px 30px;
+  }
+
+  .vf-footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .vf-footer-contact {
+    background: rgba(255,255,255,0.1);
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+  }
+
+  .vf-footer-contact h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .vf-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+  .vf-contact-item a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+  }
+
+  .vf-contact-item a:hover {
+    opacity: 0.8;
+  }
+
+  .vf-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .vf-social-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: background 0.3s;
+  }
+
+  .vf-social-icon:hover {
+    background: rgba(255,255,255,0.3);
+  }
+
+  .vf-footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .vf-footer-col h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .vf-footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .vf-footer-col ul li {
+    margin-bottom: 12px;
+  }
+
+  .vf-footer-col a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+
+  .vf-footer-col a:hover {
+    color: white;
+  }
+
+  .vf-footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+  }
+
+  .vf-footer-bottom p {
+    margin: 10px 0;
+  }
+
+  @media (max-width: 768px) {
+    .vf-footer {
+      padding: 40px 20px 20px;
+    }
+
+    .vf-footer-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+  }
+</style>
+
+<footer class="vf-footer">
+  <div class="vf-footer-container">
+    
+    <div class="vf-footer-contact">
+      <h3>Get in Touch</h3>
+      <div class="vf-contact-item">
+        <span>📧</span>
+        <a href="mailto:business.vitalflow@gmail.com">business.vitalflow@gmail.com</a>
+      </div>
+      <div class="vf-contact-item">
+        <span>📱</span>
+        <span>TikTok: @vitalflow.com</span>
+      </div>
+      <div class="vf-social">
+        <a href="https://tiktok.com/@vitalflow.com" class="vf-social-icon" title="TikTok">🎵</a>
+      </div>
+    </div>
+
+    <div class="vf-footer-grid">
+      <div class="vf-footer-col">
+        <h3>Shop</h3>
+        <ul>
+          <li><a href="/products">All Products</a></li>
+          <li><a href="/products/toplux-magnesium-complex">Toplux Magnesium</a></li>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Best Sellers</a></li>
+        </ul>
+      </div>
+
+      <div class="vf-footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="/pages/about">About Us</a></li>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Why VitalFlow</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="vf-footer-col">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Track Order</a></li>
+        </ul>
+      </div>
+
+      <div class="vf-footer-col">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Disclaimer</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="vf-footer-bottom">
+      <p>&copy; 2024 VitalFlow. All rights reserved. | Helping you live healthy</p>
+      <p>These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+    </div>
+
+  </div>
+</footer>
