@@ -1,0 +1,25 @@
+{
+  "general": {
+    "shop": {
+      "title": "VitalFlow"
+    },
+    "navigation": {
+      "search": "Search",
+      "menu": "Menu"
+    }
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "Add to Cart",
+      "sold_out": "Sold Out",
+      "unavailable": "Unavailable"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Shopping Cart",
+      "empty": "Your cart is empty",
+      "continue_shopping": "Continue Shopping"
+    }
+  }
+}
