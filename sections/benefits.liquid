@@ -1,0 +1,116 @@
+<style>
+  .vf-benefits {
+    padding: 80px 40px;
+    background: white;
+  }
+
+  .vf-benefits-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .vf-benefits h2 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin: 0 0 60px 0;
+  }
+
+  .vf-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  .vf-benefit-card {
+    text-align: center;
+    padding: 40px;
+    background: #F8F9FA;
+    border-radius: 12px;
+    transition: all 0.3s;
+  }
+
+  .vf-benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  }
+
+  .vf-benefit-icon {
+    font-size: 56px;
+    margin-bottom: 20px;
+  }
+
+  .vf-benefit-card h3 {
+    font-size: 22px;
+    color: #1E3A8A;
+    margin: 0 0 15px 0;
+    font-weight: 700;
+  }
+
+  .vf-benefit-card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.8;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .vf-benefits {
+      padding: 60px 20px;
+    }
+
+    .vf-benefits-grid {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .vf-benefits h2 {
+      font-size: 32px;
+    }
+  }
+</style>
+
+<div class="vf-benefits">
+  <div class="vf-benefits-container">
+    <h2>Why Choose VitalFlow?</h2>
+
+    <div class="vf-benefits-grid">
+      <div class="vf-benefit-card">
+        <div class="vf-benefit-icon">🔬</div>
+        <h3>Science-Backed</h3>
+        <p>Every product is formulated based on clinical research and backed by peer-reviewed studies.</p>
+      </div>
+
+      <div class="vf-benefit-card">
+        <div class="vf-benefit-icon">⭐</div>
+        <h3>Premium Quality</h3>
+        <p>GMP certified, lab tested, and made with only the highest quality ingredients.</p>
+      </div>
+
+      <div class="vf-benefit-card">
+        <div class="vf-benefit-icon">🎯</div>
+        <h3>Real Results</h3>
+        <p>Thousands of satisfied customers experiencing improved health and wellness.</p>
+      </div>
+
+      <div class="vf-benefit-card">
+        <div class="vf-benefit-icon">🚚</div>
+        <h3>Fast Shipping</h3>
+        <p>Free shipping on orders over $50. Quick delivery to your doorstep.</p>
+      </div>
+
+      <div class="vf-benefit-card">
+        <div class="vf-benefit-icon">💚</div>
+        <h3>Customer Support</h3>
+        <p>Dedicated support team ready to help. 30-day money-back guarantee.</p>
+      </div>
+
+      <div class="vf-benefit-card">
+        <div class="vf-benefit-icon">🌿</div>
+        <h3>Natural & Safe</h3>
+        <p>No artificial additives, fillers, or harmful chemicals. Safe for long-term use.</p>
+      </div>
+    </div>
+  </div>
+</div>
