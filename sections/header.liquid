@@ -1,0 +1,80 @@
+<style>
+  .vf-header {
+    background: white;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .vf-header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .vf-logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #1E3A8A;
+    text-decoration: none;
+  }
+
+  .vf-logo span {
+    color: #87CEEB;
+  }
+
+  .vf-nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .vf-nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  .vf-nav a:hover {
+    color: #1E3A8A;
+  }
+
+  .vf-cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .vf-header {
+      padding: 15px 20px;
+    }
+
+    .vf-nav {
+      gap: 20px;
+    }
+
+    .vf-logo {
+      font-size: 18px;
+    }
+  }
+</style>
+
+<header class="vf-header">
+  <div class="vf-header-container">
+    <a href="/" class="vf-logo">Vital<span>Flow</span></a>
+    
+    <nav class="vf-nav">
+      <a href="/">Home</a>
+      <a href="/products">Shop</a>
+      <a href="/pages/about">About</a>
+      <a href="/pages/faq">FAQ</a>
+      <a href="/pages/contact">Contact</a>
+      <a href="/cart" class="vf-cart-icon">🛒</a>
+    </nav>
+  </div>
+</header>
