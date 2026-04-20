@@ -1,0 +1,178 @@
+<style>
+  .vf-featured {
+    padding: 80px 40px;
+    background: #F8F9FA;
+    margin: 60px 0;
+  }
+
+  .vf-featured-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .vf-section-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin: 0 0 50px 0;
+  }
+
+  .vf-section-title span {
+    color: #87CEEB;
+  }
+
+  .vf-featured-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .vf-featured-image {
+    text-align: center;
+  }
+
+  .vf-featured-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  }
+
+  .vf-featured-info h3 {
+    font-size: 32px;
+    color: #1E3A8A;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+  }
+
+  .vf-featured-info p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+    margin: 0 0 25px 0;
+  }
+
+  .vf-featured-price {
+    font-size: 48px;
+    font-weight: 800;
+    color: #1E3A8A;
+    margin: 30px 0;
+  }
+
+  .vf-featured-price span {
+    font-size: 28px;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 15px;
+  }
+
+  .vf-features-list {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 30px 0;
+  }
+
+  .vf-feature-item {
+    display: flex;
+    align-items: start;
+    gap: 12px;
+    margin-bottom: 15px;
+  }
+
+  .vf-feature-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .vf-checkmark {
+    color: #4CAF50;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .vf-feature-text {
+    font-size: 15px;
+    color: #333;
+  }
+
+  .vf-btn-view {
+    background: #1E3A8A;
+    color: white;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+    transition: all 0.3s;
+  }
+
+  .vf-btn-view:hover {
+    background: #0f1f5a;
+  }
+
+  @media (max-width: 768px) {
+    .vf-featured {
+      padding: 60px 20px;
+    }
+
+    .vf-featured-grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .vf-section-title {
+      font-size: 32px;
+    }
+  }
+</style>
+
+<div class="vf-featured" id="products">
+  <div class="vf-featured-container">
+    <h2 class="vf-section-title">Our <span>Flagship Product</span></h2>
+
+    <div class="vf-featured-grid">
+      <div class="vf-featured-image">
+        <img src="https://via.placeholder.com/500x500/87CEEB/ffffff?text=Toplux+Magnesium" 
+             alt="Toplux Magnesium Complex">
+      </div>
+
+      <div class="vf-featured-info">
+        <h3>Toplux Magnesium Complex</h3>
+        
+        <p>Experience the power of premium magnesium supplementation. Our advanced triple-blend formula combines magnesium citrate, glycinate, and malate for maximum absorption and effectiveness.</p>
+
+        <div class="vf-featured-price">
+          $25.00
+          <span>$39.99</span>
+        </div>
+
+        <div class="vf-features-list">
+          <div class="vf-feature-item">
+            <span class="vf-checkmark">✓</span>
+            <span class="vf-feature-text">Triple magnesium formula for superior absorption</span>
+          </div>
+          <div class="vf-feature-item">
+            <span class="vf-checkmark">✓</span>
+            <span class="vf-feature-text">Promotes deeper, more restful sleep</span>
+          </div>
+          <div class="vf-feature-item">
+            <span class="vf-checkmark">✓</span>
+            <span class="vf-feature-text">Supports muscle relaxation and recovery</span>
+          </div>
+          <div class="vf-feature-item">
+            <span class="vf-checkmark">✓</span>
+            <span class="vf-feature-text">Reduces stress and promotes calm</span>
+          </div>
+          <div class="vf-feature-item">
+            <span class="vf-checkmark">✓</span>
+            <span class="vf-feature-text">Lab tested • GMP certified • Made in USA</span>
+          </div>
+        </div>
+
+        <a href="/products/toplux-magnesium-complex" class="vf-btn-view">View Full Details</a>
+      </div>
+    </div>
+  </div>
+</div>
