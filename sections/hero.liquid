@@ -1,0 +1,117 @@
+<style>
+  .vf-hero {
+    background: linear-gradient(135deg, #87CEEB 0%, #1E3A8A 100%);
+    color: white;
+    padding: 120px 40px;
+    text-align: center;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .vf-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  .vf-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .vf-hero h1 {
+    font-size: 56px;
+    font-weight: 800;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+  }
+
+  .vf-hero p {
+    font-size: 24px;
+    margin: 0 0 40px 0;
+    opacity: 0.95;
+    line-height: 1.6;
+  }
+
+  .vf-hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .vf-btn-primary {
+    background: white;
+    color: #1E3A8A;
+    padding: 16px 40px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+    display: inline-block;
+  }
+
+  .vf-btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  }
+
+  .vf-btn-secondary {
+    background: transparent;
+    color: white;
+    padding: 16px 40px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: all 0.3s;
+    display: inline-block;
+  }
+
+  .vf-btn-secondary:hover {
+    background: white;
+    color: #1E3A8A;
+  }
+
+  @media (max-width: 768px) {
+    .vf-hero {
+      padding: 80px 20px;
+      min-height: 400px;
+    }
+
+    .vf-hero h1 {
+      font-size: 36px;
+    }
+
+    .vf-hero p {
+      font-size: 18px;
+    }
+  }
+</style>
+
+<div class="vf-hero">
+  <div class="vf-hero-content">
+    <h1>Transform Your Health with Premium Magnesium</h1>
+    <p>Helping you live healthy</p>
+    <div class="vf-hero-buttons">
+      <a href="/products" class="vf-btn-primary">Shop Now</a>
+      <a href="/pages/about" class="vf-btn-secondary">Learn More</a>
+    </div>
+  </div>
+</div>
