@@ -1,0 +1,26 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero"
+    },
+    "featured_product": {
+      "type": "featured-product"
+    },
+    "benefits": {
+      "type": "benefits"
+    },
+    "faq": {
+      "type": "faq"
+    },
+    "newsletter": {
+      "type": "newsletter"
+    }
+  },
+  "order": [
+    "hero",
+    "featured_product",
+    "benefits",
+    "faq",
+    "newsletter"
+  ]
+}
