@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page_title }}</title>
+    <link rel="stylesheet" href="{{ 'style.css' | asset_url }}">
+    {% if page_description %}
+        <meta name="description" content="{{ page_description | escape }}">
+    {% endif %}
+</head>
+<body>
+    {% section 'header' %}
+    
+    <main id="MainContent">
+        {{ content_for_layout }}
+    </main>
+    
+    {% section 'footer' %}
+    
+    <script src="{{ 'script.js' | asset_url }}" defer></script>
+</body>
+</html>
