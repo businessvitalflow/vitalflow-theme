@@ -1,0 +1,96 @@
+<style>
+  .vf-newsletter {
+    background: linear-gradient(135deg, #1E3A8A 0%, #087EA4 100%);
+    color: white;
+    padding: 80px 40px;
+    text-align: center;
+  }
+
+  .vf-newsletter-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .vf-newsletter h2 {
+    font-size: 38px;
+    font-weight: 800;
+    margin: 0 0 15px 0;
+  }
+
+  .vf-newsletter p {
+    font-size: 16px;
+    margin: 0 0 30px 0;
+    opacity: 0.95;
+  }
+
+  .vf-newsletter-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .vf-newsletter-input {
+    flex: 1;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+
+  .vf-newsletter-submit {
+    padding: 14px 30px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .vf-newsletter-submit:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+  }
+
+  .vf-newsletter-disclaimer {
+    font-size: 12px;
+    opacity: 0.8;
+  }
+
+  @media (max-width: 768px) {
+    .vf-newsletter {
+      padding: 60px 20px;
+    }
+
+    .vf-newsletter-form {
+      flex-direction: column;
+    }
+
+    .vf-newsletter h2 {
+      font-size: 28px;
+    }
+  }
+</style>
+
+<div class="vf-newsletter">
+  <div class="vf-newsletter-content">
+    <h2>Transform Your Health Today</h2>
+    <p>Get exclusive offers, health tips, and updates delivered to your inbox</p>
+    
+    <form class="vf-newsletter-form" onsubmit="handleNewsletterSignup(event)">
+      <input type="email" class="vf-newsletter-input" placeholder="Enter your email" required>
+      <button type="submit" class="vf-newsletter-submit">Subscribe</button>
+    </form>
+    
+    <p class="vf-newsletter-disclaimer">We respect your privacy. Unsubscribe anytime.</p>
+  </div>
+</div>
+
+<script>
+  function handleNewsletterSignup(e) {
+    e.preventDefault();
+    alert('Thank you for subscribing! Check your email for exclusive offers.');
+    e.target.reset();
+  }
+</script>
